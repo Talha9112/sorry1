@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorry Madam :)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .image-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      transition: transform 0.5s ease;
+    }
+    .text-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 2em;
+      color: #333;
+      text-align: center;
+      transition: color 0.5s ease;
+    }
+    .iyaa {
+      background-color: #8df19a;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 17px;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .iyaa:hover {
+      background-color: #76c18a;
+      transform: scale(1.05);
+    }
+    .tricky {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      transition: transform 0.3s ease;
+    }
+    .tricky button {
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .tricky button:hover {
+      background-color: #ff4757;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-center">
+    <img src="https://c.tenor.com/VxixtsQjIRAAAAAj/chibi-cat-mochi-cat.gif" alt="image" id="image-alt" />
+  </div>
+  <div class="text-center">
+    <h1 id="text">I Am Sorry Madam.......!</h1>
+  </div>
+  <div class="text-center">
+    <button type="button" class="iyaa">ITS OK....</button>
+  </div>
+  <div class="tricky">
+    <button type="button" class="gamau">NO</button>
+  </div>
+  <script>
+    let iyaa = document.querySelector(".iyaa");
+    let Gamau = document.querySelector(".tricky");
+    iyaa.addEventListener("click", function() {
+      document.getElementById("image-alt").src = "https://c.tenor.com/lqtU1G4aaqIAAAAj/yom-dance.gif";
+      document.getElementById("text").innerHTML = "Achi Bachiii🙆 &hearts; &hearts; &hearts; &hearts;";
+      document.querySelector("body").style.backgroundColor = "#dfffd6";
+    });
+    Gamau.addEventListener("mouseover", function () {
+      Gamau.style.left = Math.random() * 80 + "vw";
+      Gamau.style.top = Math.random() * 80 + "vh";
+    });
+  </script>
+</body>
+</html>
